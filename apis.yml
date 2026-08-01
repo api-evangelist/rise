@@ -1,4 +1,16 @@
 aid: rise
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rise.png
 name: Rise
 description: 'Rise is a company surfaced as a portfolio company of cowboy-ventures, gv and added to the
   API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting the
@@ -26,3 +38,16 @@ maintainers:
 common:
 - type: Website
   url: http://rise.us
+x-enrichment:
+  date: '2026-07-21'
+  status: nochange
+  artifacts_added: 0
+  pass: local-v1
+  notes: >-
+    Reconnaissance completed via authoritative DNS + WebFetch. rise.us is parked:
+    apex and all subdomains (www, app, api, docs, developer) resolve to 127.0.0.1
+    with no reachable web/HTTPS host, so there is no website, developer portal, or
+    API surface. Domain is email-only (MX mxrecord.io; SPF google/zendesk/customerio;
+    DMARC p=quarantine; no CAA, no DNSSEC), consistent with a defunct/acquired
+    consumer-app portfolio lead. No artifacts created (no fabrication). WebSearch
+    budget was exhausted, but DNS was authoritative and conclusive.
